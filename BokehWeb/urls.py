@@ -17,7 +17,10 @@ from django.conf.urls import url
 from django.contrib import admin
 from BokehWeb import views
 
+
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^index/', views.index)
+    url(r'^index/', views.index),
+    url(r'square/', views.square_plot),
+    url(r'linked/', views.linked_histogram)
 ]
